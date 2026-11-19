@@ -1,0 +1,26 @@
+# Initial values for Phase 1. Tune them only after baseline experiments.
+project:
+  name: armscribe-ai
+  num_classes: 39
+paths:
+  raw_data: data/raw
+  processed_data: data/processed
+  volunteer_data: data/volunteers
+  checkpoints: checkpoints
+  results: results
+  reports: reports
+data:
+  image_size: [64, 64]
+  batch_size: 32
+  split:
+    train: 0.70
+    validation: 0.15
+    test: 0.15
+    writer_independent: true
+training:
+  epochs: 20
+  learning_rate: 0.001
+  seeds: [42, 123, 2026]
+  augmentation_enabled: false
+model:
+  name: placeholder

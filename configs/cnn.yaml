@@ -1,0 +1,6 @@
+# Merge with default.yaml before a future CNN run.
+model:
+  name: cnn
+  architecture: pending_implementation
+training:
+  augmentation_enabled: true

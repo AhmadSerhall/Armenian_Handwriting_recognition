@@ -1,0 +1,6 @@
+# Merge with default.yaml before a future k-NN run.
+model:
+  name: knn
+  n_neighbors: 5
+training:
+  augmentation_enabled: false
